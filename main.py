@@ -8,7 +8,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start', 'help'])  #Явно указываем в декораторе, на какую команду реагируем.
 async def send_welcome(msg: types.Message):
     await msg.reply_to_message(f'Я бот. Приятно познакомиться,{msg.from_user.first_name}')
-
+фыв
 @dp.message_handler(content_types=['text'])
 async def get_text_messages(msg: types.Message):
     print(msg.text)
